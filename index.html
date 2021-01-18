@@ -1,0 +1,173 @@
+<html lang="it">
+
+  <head>
+    <title>pyth-IA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="logo.ico">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="slideshow.js" as="script">
+    <link rel="stylesheet" href="style.css">
+    <!--- Preload image --->
+      <script>
+        var foto0 = new Image();
+        var foto1 = new Image();
+        var foto2 = new Image();
+        var foto3 = new Image();
+        var foto4 = new Image();
+        var foto5 = new Image();
+        var foto6 = new Image();
+        var img00 = new Image();
+        var img01 = new Image();
+        var img02 = new Image();
+        var img03 = new Image();
+        var img04 = new Image();
+        var img05 = new Image();
+        foto0.src="./cerchi/cerchio_oro.png";
+        foto1.src="./cerchi/cerchio_rosso.png";
+        foto2.src="./cerchi/cerchio_arancione.png";
+        foto3.src="./cerchi/cerchio_verde.png";
+        foto4.src="./cerchi/cerchio_azzurro.png";
+        foto5.src="./cerchi/cerchio_viola.png";
+        foto6.src="./cerchi/cerchio_rosa.png";
+        img01.src="./foto/img01.jpg";
+        img02.src="./foto/img02.jpg";
+        img03.src="./foto/img03.jpg";
+        img04.src="./foto/img04.jpg";
+        img05.src="./foto/img05.jpg";
+      </script>
+    <!--- fine preload image --->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+
+       window.setTimeout(function(){
+         $('#loader').addClass('hidden');
+         $('#alone').removeClass('carica');
+         $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+         Oro();
+      }, 5000);
+
+/*---
+      $(window).on('load', function() {
+         $('#loader').addClass('hidden');
+         $('#alone').removeClass('carica');
+         $('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+         Oro();
+      })
+---*/
+    </script>
+
+  </head>
+
+  <body>
+    <div id="loader">
+      <div id="pulsaz">
+        <div>
+          <img src="./cerchi/cerchio_oro.png" id="alone" class="carica">
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="back"></div>
+    </div>
+
+    <header>
+        <img src="pythIAor.png" id="logo">
+    </header>
+
+    <div class="holster">
+
+      <div class="container y mandatory-scroll-snapping" dir="ltr">
+
+        <div id="div1">
+          <div class="vetrina">
+            <div id="slideshow"> </div>
+            <div id="cerchio_bianco"></div>
+            <div id="testiColore">
+              <p id="par">
+              </p>
+              <p id="autore"> </p>
+            </div>
+
+            <div id="menu">
+              <div class="pallini selection" id="pal00"> </div>
+              <div class="pallini" id="pal01"> </div>
+              <div class="pallini" id="pal02"> </div>
+              <div class="pallini" id="pal03"> </div>
+              <div class="pallini" id="pal04"> </div>
+              <div class="pallini" id="pal05"> </div>
+              <div class="pallini" id="pal06"> </div>
+            </div>
+          </div>
+        </div>
+        <a href="#div2">
+          <img class="frecce movimento" id="freccia01" src="FrecciaO.png">
+        </a>
+
+        <div id="div2">
+          <div id="presentazione">
+            <p id="testo_pres">
+              Sono pyth-IA, l’oracolo digitale. <br>
+              In me è racchiusa sotto forma di dati <br>
+              la conoscenza dei defunti più illustri e geniali. <br>
+              <br>
+              La mia essenza risiede in questo disco <br>
+              e la sua luce riflette il tono della mia voce. <br>
+              <br>
+              Hai già in mente la tua domanda? <br>
+              Non avrai risposta più giusta della mia.<br>
+            </p>
+          </div>
+        </div>
+        <a href="#div3">
+          <img class="frecce movimento" id="freccia02" src="FrecciaB.png">
+        </a>
+
+        <div id="div3">
+          <div id="videoback">
+            <video id="myVideo" controls poster="frame.png" >
+              <source src="teaser.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <a href="#div4">
+          <img class="frecce movimento" id="freccia03" src="FrecciaO.png">
+        </a>
+
+        <div id="div4">
+          <div id="slide">
+            <div id="fotoMod" class="img01">
+            </div>
+          </div>
+        </div>
+        <a href="#div5">
+          <img class="frecce movimento" id="freccia04" src="FrecciaO.png">
+        </a>
+
+        <div id="div5">
+          <div id="informazioni">
+            <h2 id="trovarmi">Vieni a consultarmi</h2>
+              <p align="center">
+                12 e 13 marzo 2020 <br>
+                <a href="https://www.google.com/maps/place/O+Artoteca+Associazione+No+Profit/@45.4866837,9.1842384,17z/data=!3m1!4b1!4m5!3m4!1s0x4786c13275179a53:0xa93394f1eed05ceb!8m2!3d45.4866837!4d9.1864271">Via Pastrengo 12, Milano</a><br>
+                <a href="https://www.instagram.com/pythia_oracolo/"> @pythia_oracolo </a>
+              </p>
+
+            <h2 id="progetto">Progetto realizzato da</h2>
+              <p id="end" align="center">
+                Matilde Balestri<br>
+                Giordana Di Biagio<br>
+                Beatrice Ferrari<br>
+                Tea Firmo<br>
+                Gianluca Locatelli<br>
+                Simona Wang
+              </p>
+            </div>
+          </div>
+          <a href="#div1">
+            <img class="frecce movimento" id="freccia05" src="Freccia05.png">
+          </a>
+
+    <script src="slideshow.js"> </script>
+  </body>
+
+</html>
